@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.contenido{
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;   /*efecto de que las imagenes queden fijas*/
+    background-repeat: no-repeat;
+
+
+}
+#zona1{
+    background-image: url('../images/landingpage.jpg');
+    align-items: center;
+}
+#zona2{
+    background-image: url('../images/porsche.jpg');
+    align-items: center;
+}
+#zona30{
+    background-image: url('../images/1930.jpg');
+    align-items: center;
+}
+#zona40{
+    background-image: url('../images/1940.jpg');
+    align-items: center;
+}
+#zona50{
+    background-image: url('../images/1950.jpg');
+    align-items: center;
+}
+#zona60{
+    background-image: url('../images/1960.jpg');
+    align-items: center;
+}
+
+/*menu*/
+nav{
+    position: fixed;
+    left: 10%;
+    top: 40%;
+    z-index:100;/*permite trabajar por capas(entre mas valor mas visible)*/
+    transition: 0.4s ease;/*esea simpre va a tener la misma velocidad y hay 4 ease, esase-in, ease-in.out y ease-out*/
+    transform: translateX(-50%);
+
+
+}
+ul{
+    list-style: none;/*eliminar las biñetas de la lista*/
+}
+ul a{
+    display:block;
+    color:#F5EFE6;
+    text-decoration: none;
+    border: 2px solid #C9A96E;
+    padding: 10px 0;/*espaciado*/
+    width: 150px;
+    height: 40px;
+    text-align: center;/*Centrar el texto*/
+    transition: 0.4s ease;
+}
+a:hover{
+    transform: translateX(10%);
+    background-color: #C9A96E;
+    color:#1A1A1A;
+    border: 2px solid #C9A96E;
+}
